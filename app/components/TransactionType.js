@@ -13,8 +13,10 @@ class TransactionType extends React.Component {
             this.props.onRequestNewTransactionType();
         }}
       >
-        {this.props.transactionTypes.map(transactionType => (
-          <option value={transactionType}>{transactionType}</option>
+        {this.props.transactionTypes.map((transactionType, index) => (
+          <option value={transactionType} key={'transaction-type-' + index}>
+            {transactionType}
+          </option>
         ))}
         <option value="default">Select the type of transaction</option>
         <option value="addNew">Add new transaction type</option>
