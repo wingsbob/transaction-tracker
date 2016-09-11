@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "node": false,
+    "commonjs": true
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "createClass": "createClass",
+      "pragma": "React",
+      "version": "15.3"
+    }
+  },
+  "rules": {
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
