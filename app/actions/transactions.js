@@ -1,6 +1,8 @@
-const addTransaction = (name) => ({
+const addTransaction = ({name, amount, transactionType}) => ({
   type: 'ADD_TRANSACTION',
-  name
+  name,
+  amount,
+  transactionType
 });
 
 const removeTransaction = (id) => ({
