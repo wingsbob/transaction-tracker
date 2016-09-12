@@ -1,6 +1,7 @@
 const React = require('react');
+const BaseComponent = require('./BaseComponent');
 
-class AddTransactionType extends React.Component {
+class AddTransactionType extends BaseComponent {
   render() {
     var typeName;
 

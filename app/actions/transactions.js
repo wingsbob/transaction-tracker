@@ -1,6 +1,6 @@
-const addTransaction = ({name, amount, transactionType}) => ({
+const addTransaction = ({description, amount, transactionType}) => ({
   type: 'ADD_TRANSACTION',
-  name,
+  description,
   amount,
   transactionType
 });
